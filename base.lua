@@ -8,7 +8,7 @@ end)
 return {
     color_scheme = "zenbones_dark",
     enable_tab_bar = false,
-    --default_prog = { "nvim" },
+    default_prog = { "zellij" },
     launch_menu = {
         { label = 'neovim', args = { 'nvim' } },
         { label = 'zellij', args = { 'zellij' } },
