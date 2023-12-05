@@ -15,8 +15,8 @@ return {
     },
     set_environment_variables = {
         SHELL = "/usr/local/bin/nu",
+        LS_ROOT = '/opt/language-server'
         NVIM_LEVEL = "x",
-        PATH = "/opt/node/bin:" .. os.getenv("PATH"),
     },
     window_decorations = "RESIZE",
     font = wezterm.font {
