@@ -8,26 +8,29 @@ end)
 return {
     color_scheme = "zenbones_dark",
     enable_tab_bar = false,
-    default_prog = { "zellij" },
+    --default_prog = { "zellij" },
     launch_menu = {
         { label = 'neovim', args = { 'nvim' } },
         { label = 'zellij', args = { 'zellij' } },
     },
     set_environment_variables = {
         SHELL = "/usr/local/bin/nu",
-        LS_ROOT = '/opt/language-server'
+        LS_ROOT = '/opt/language-server',
         NVIM_LEVEL = "x",
     },
     window_decorations = "RESIZE",
     font = wezterm.font {
+        family = 'Monaspace Argon',
+        --[[
         family = 'JetBrains Mono',
         weight = 'Light',
         stretch = 'Condensed',
+        --]]
     },
     font_size = 12,
     window_padding = {
-        left = 2,
-        right = 2,
+        left = 0,
+        right = 0,
         top = 0,
         bottom = 0,
     },
