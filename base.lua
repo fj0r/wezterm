@@ -6,6 +6,7 @@ wezterm.on("gui-startup", function(cmd)
 end)
 
 return {
+    enable_wayland = false,
     color_scheme = "zenbones_dark",
     enable_tab_bar = false,
     --default_prog = { "zellij" },
@@ -20,14 +21,15 @@ return {
     },
     window_decorations = "RESIZE",
     font = wezterm.font {
-        family = 'Monaspace Argon',
+        family = 'JetBrainsMono Nerd Font Mono',
+        --family = 'MonaspiceAr Nerd Font Mono',
         --[[
         family = 'JetBrains Mono',
         weight = 'Light',
         stretch = 'Condensed',
         --]]
     },
-    font_size = 12,
+    font_size = 11,
     window_padding = {
         left = 0,
         right = 0,
@@ -35,6 +37,6 @@ return {
         bottom = 0,
     },
     enable_csi_u_key_encoding = true,
-    --enable_kitty_keyboard = true,
+    enable_kitty_keyboard = true,
     warn_about_missing_glyphs = false,
 }
